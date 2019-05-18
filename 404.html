@@ -1,12 +1,102 @@
 ---
 permalink: /404.html
 ---
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
-		<title>Error 404: File not found</title>
-	</head>
+		<title>Error 404: Not Found</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href=".404/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href=".404/assets/css/noscript.css" /></noscript>
 
-	<p>
-		The file at this URL could not be found.
-	</p>
+		<link rel="stylesheet" href=".404/blockrain/blockrain.css">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-exclamation"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Error 404</h1>
+								<p>The page or file you're looking<br />
+								for couldn't be found.</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#overview">Overview</a></li>
+								<li><a href="#tetris">Tetris</a></li>
+								<li><a href="#home">Home</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Overview -->
+							<article id="overview">
+								<h2 class="major">Overview</h2>
+								<p><i>From <a href="https://en.wikipedia.org/wiki/HTTP_404">Wikipedia</a>, retrieved 18 May 2019</i></p>
+
+								<p>When communicating via HTTP, a server is required to respond to a request, such as a web browser request for a web page, with a numeric response code and an optional, mandatory, or disallowed (based upon the status code) message. In the code 404, the first digit indicates a client error, such as a mistyped Uniform Resource Locator (URL). The following two digits indicate the specific error encountered. HTTP's use of three-digit codes is similar to the use of such codes in earlier protocols such as FTP and NNTP.</p>
+
+								<p>At the HTTP level, a 404 response code is followed by a human-readable "reason phrase". The HTTP specification suggests the phrase "Not Found" and many web servers by default issue an HTML page that includes both the 404 code and the "Not Found" phrase.</p>
+
+								<p>A 404 error is often returned when pages have been moved or deleted. In the first case, it is better to employ URL mapping or URL redirection by returning a 301 Moved Permanently response, which can be configured in most server configuration files, or through URL rewriting; in the second case, a 410 Gone should be returned. Because these two options require special server configuration, most websites do not make use of them.</p>
+
+								<p>404 errors should not be confused with DNS errors, which appear when the given URL refers to a server name that does not exist. A 404 error indicates that the server itself was found, but that the server was not able to retrieve the requested page.</p>
+							</article>
+
+						<!-- Tetris -->
+							<article id="tetris">
+								<h2 class="major">Tetris</h2>
+								<p><i>Written by <a href="https://github.com/Aerolab/blockrain.js">Aerolab</a></i></p>
+								<div class="game" style="width:250px; height:500px;"></div>
+								<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+								<script src=".404/blockrain/blockrain.jquery.min.js"></script>
+								<script>
+									$('.game').blockrain();
+								</script>
+							</article>
+
+						<!-- Home -->
+							<article id="home">
+								<h2 class="major">Home</h2>
+								<p>Click <a href="/">here</a> to go home.</p>
+
+								<p><i>Are you sure you don't want to <a href="#tetris">play some Tetris?</a></i></p>
+							</article>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Melamona. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src=".404/assets/js/jquery.min.js"></script>
+			<script src=".404/assets/js/browser.min.js"></script>
+			<script src=".404/assets/js/breakpoints.min.js"></script>
+			<script src=".404/assets/js/util.js"></script>
+			<script src=".404/assets/js/main.js"></script>
+
+	</body>
 </html>
